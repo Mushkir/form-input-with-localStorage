@@ -2,11 +2,16 @@
 export default {
   content: [
     "./index.html",
+    "./all-details.html",
     "./assets/js/main.js",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Sen': 'Sen'
+      }
+    },
   },
   plugins: [],
 }

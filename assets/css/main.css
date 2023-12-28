@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Sen:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.display-flex {
+    @apply flex flex-col space-y-2
+}
+
+
+.input-options {
+    @apply p-4 rounded-md outline-none
+}
+
+.label-options {
+    @apply text-[#E8ECEC] text-xl
+}

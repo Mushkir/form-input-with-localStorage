@@ -1,15 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/healthcare.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart Page | Apple Store</title>
+    <title>Visitors bookings | SMN Healthcare</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body>
-    
+  <body class="font-Sen bg-gradient-to-r from-[#03312E] to-[#1C4542] relative">
+    <header
+      class="bg-[#E8ECEC] flex justify-between items-center py-5 px-[150px] fixed top-0 left-0 right-0"
+    >
+      <!-- Logo -->
+      <div class="flex flex-col justify-center items-center cursor-pointer">
+        <img
+          src="./assets/img/healthcare.png"
+          alt="Healthcare Logo"
+          class="w-[50px]"
+        />
+        <h3>SMN Healthcare+</h3>
+      </div>
+
+      <!-- Contact Us -->
+      <div>
+        <button
+          class="bg-[#03312E] text-[#E8ECEC] px-3 py-1.5 rounded hover:bg-[#355A57] hover:transition 500"
+        >
+          Contact Us
+        </button>
+      </div>
+    </header>
+
+    <main class="mt-56 flex justify-center gap-x-16">
+      <div class="w-[40%] p-5">
+        <h1 class="text-3xl text-[#E8ECEC] mb-12">
+          Embark on Your Wellness Journey with SMN Healthcare!
+        </h1>
+
+        <p class="text-[#B9BCBC]">
+          Hello and welcome to SMN Healthcare! Your well-being is our priority,
+          and we're excited to guide you on a seamless and personalized
+          healthcare journey. Let's make each booking a step towards your
+          optimal health!
+        </p>
+      </div>
+
+      <!-- Booking Form -->
+      <div class="w-[40%] p-5">
+        <form id="bookingForm">
+          <!-- First Name -->
+          <div class="display-flex mb-4">
+            <label for=" first-name" class="label-options">First Name*</label>
+            <input
+              type="text"
+              name=" first-name"
+              id=" first-name"
+              class="input-options"
+              required
+            />
+          </div>
+
+          <!-- Last Name -->
+          <div class="display-flex mb-4">
+            <label for="last-name" class="label-options">Last Name*</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              class="input-options"
+              required
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="display-flex mb-4">
+            <label for="contact-number" class="label-options"
+              >Contact Number*</label
+            >
+            <input
+              type="text"
+              name="contact-number"
+              id="contact-number"
+              class="input-options"
+              required
+            />
+          </div>
+
+          <!-- State -->
+          <div class="display-flex mb-4">
+            <label for="country-state" class="label-options">State*</label>
+            <select
+              id="country-state"
+              name="country-state"
+              class="input-options"
+              required
+            >
+              <option value="">Please Select</option>
+              <option value="52">Ampara</option>
+              <option value="71">Anuradhapura</option>
+              <option value="81">Badulla</option>
+              <option value="51">Batticaloa</option>
+              <option value="11">Colombo</option>
+              <option value="31">Galle</option>
+              <option value="12">Gampaha</option>
+              <option value="33">Hambantota</option>
+              <option value="41">Jaffna</option>
+              <option value="13">Kalutara</option>
+              <option value="21">Kandy</option>
+              <option value="92">Kegalle</option>
+              <option value="42">Kilinochchi</option>
+              <option value="43">Mannar</option>
+              <option value="22">Matale</option>
+              <option value="32">Matara</option>
+              <option value="82">Monaragala</option>
+              <option value="45">Mullaitivu</option>
+              <option value="23">Nuwara Eliya</option>
+              <option value="72">Polonnaruwa</option>
+              <option value="62">Puttalam</option>
+              <option value="91">Ratnapura</option>
+              <option value="53">Trincomalee</option>
+              <option value="44">Vavuniya</option>
+            </select>
+          </div>
+
+          <!-- Province -->
+          <div class="display-flex mb-4">
+            <label for="state-ist" class="label-options">Province*</label>
+            <select name="state-ist" id="state-ist" class="input-options" required>
+              <option value="">Please Select</option>
+              <option value="Central">Central</option>
+              <option value="North Central">North Central</option>
+              <option value="North Eastern">North Eastern</option>
+              <option value="North Western">North Western</option>
+              <option value="Sabaragamuwa">Sabaragamuwa</option>
+              <option value="Southern">Southern</option>
+              <option value="Uva">Uva</option>
+              <option value="Western">Western</option>
+            </select>
+          </div>
+
+          <!-- Service -->
+          <div class="display-flex mb-4">
+            <label for="service-list" class="label-options">Service*</label>
+            <select name="service-list" class="input-options" id="service-list" required>
+
+              <option value="">Please Select</option>
+              <option value="asc">Addiction services clinics</option>
+              <option value="mhc">Mental health clinics</option>
+              <option value="pcc">Primary care clinics</option>
+              <option value="shc">Sexual health clinics</option>
+              <option value="sc">Specialized clinics</option>
+              
+            </select>
+          </div>
+
+          <!-- Date -->
+          <div class="display-flex mb-4">
+            <label for="date-of-booking" class="label-options">Date*</label>
+            <input type="date" name="date-of-booking" id="date-of-booking" class="input-options" required>
+          </div>
+
+          <div class="mt-10 mb-24">
+            <a href="./all-details.html" class="bg-red-500 text-[#E8ECEC] w-full p-4 rounded-md">Show Details</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
