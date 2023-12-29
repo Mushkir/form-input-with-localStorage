@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visitors bookings | SMN Healthcare</title>
 
-    <script type="module" crossorigin src="/form-input-with-localStorage/assets/index-wN-bj40r.js"></script>
-    <link rel="stylesheet" crossorigin href="/form-input-with-localStorage/assets/index-qxxLt3Et.css">
+    <script type="module" crossorigin src="/form-input-with-localStorage/assets/utils-QfJjMGum.js"></script>
+    <script type="module" crossorigin src="/form-input-with-localStorage/assets/main-uet1njk7.js"></script>
+    <link rel="stylesheet" crossorigin href="/form-input-with-localStorage/assets/main-ipVzg4ra.css">
   </head>
   <body class="font-Sen bg-gradient-to-r from-[#03312E] to-[#1C4542] relative">
     <header
       class="bg-[#E8ECEC] flex justify-between items-center py-5 px-[150px] fixed top-0 left-0 right-0"
     >
       <!-- Logo -->
-      <div class="flex flex-col justify-center items-center cursor-pointer">
-        <img
-          src="/form-input-with-localStorage/assets/healthcare-4DZmZvoM.png"
-          alt="Healthcare Logo"
-          class="w-[50px]"
-        />
-        <h3>SMN Healthcare+</h3>
-      </div>
+      <a href="./index.html">
+        <div class="flex flex-col justify-center items-center cursor-pointer">
+          <img
+            src="/form-input-with-localStorage/assets/healthcare-4DZmZvoM.png"
+            alt="Healthcare Logo"
+            class="w-[50px]"
+          />
+          <h3>SMN Healthcare+</h3>
+        </div>
+      </a>
 
       <!-- Contact Us -->
       <div>
@@ -55,8 +58,8 @@
             <label for=" first-name" class="label-options">First Name*</label>
             <input
               type="text"
-              name=" first-name"
-              id=" first-name"
+              name="first-name"
+              id="first-name"
               class="input-options"
               required
             />
@@ -98,37 +101,37 @@
               required
             >
               <option value="">Please Select</option>
-              <option value="52">Ampara</option>
-              <option value="71">Anuradhapura</option>
-              <option value="81">Badulla</option>
-              <option value="51">Batticaloa</option>
-              <option value="11">Colombo</option>
-              <option value="31">Galle</option>
-              <option value="12">Gampaha</option>
-              <option value="33">Hambantota</option>
-              <option value="41">Jaffna</option>
-              <option value="13">Kalutara</option>
-              <option value="21">Kandy</option>
-              <option value="92">Kegalle</option>
-              <option value="42">Kilinochchi</option>
-              <option value="43">Mannar</option>
-              <option value="22">Matale</option>
-              <option value="32">Matara</option>
-              <option value="82">Monaragala</option>
-              <option value="45">Mullaitivu</option>
-              <option value="23">Nuwara Eliya</option>
-              <option value="72">Polonnaruwa</option>
-              <option value="62">Puttalam</option>
-              <option value="91">Ratnapura</option>
-              <option value="53">Trincomalee</option>
-              <option value="44">Vavuniya</option>
+              <option value="Ampara">Ampara</option>
+              <option value="Anuradhapura">Anuradhapura</option>
+              <option value="Badulla">Badulla</option>
+              <option value="Batticaloa">Batticaloa</option>
+              <option value="Colombo">Colombo</option>
+              <option value="Galle">Galle</option>
+              <option value="Gampaha">Gampaha</option>
+              <option value="Hambantota">Hambantota</option>
+              <option value="Jaffna">Jaffna</option>
+              <option value="Kalutara">Kalutara</option>
+              <option value="Kandy">Kandy</option>
+              <option value="Kegalle">Kegalle</option>
+              <option value="Kilinochchi">Kilinochchi</option>
+              <option value="Mannar">Mannar</option>
+              <option value="Matale">Matale</option>
+              <option value="Matara">Matara</option>
+              <option value="Monaragala">Monaragala</option>
+              <option value="Mullaitivu">Mullaitivu</option>
+              <option value="Nuwara Eliya">Nuwara Eliya</option>
+              <option value="Polonnaruwa">Polonnaruwa</option>
+              <option value="Puttalam">Puttalam</option>
+              <option value="Ratnapura">Ratnapura</option>
+              <option value="Trincomalee">Trincomalee</option>
+              <option value="Vavuniya">Vavuniya</option>
             </select>
           </div>
 
           <!-- Province -->
           <div class="display-flex mb-4">
-            <label for="state-ist" class="label-options">Province*</label>
-            <select name="state-ist" id="state-ist" class="input-options" required>
+            <label for="province-ist" class="label-options">Province*</label>
+            <select name="province-ist" id="province-list" class="input-options" required>
               <option value="">Please Select</option>
               <option value="Central">Central</option>
               <option value="North Central">North Central</option>
@@ -147,11 +150,11 @@
             <select name="service-list" class="input-options" id="service-list" required>
 
               <option value="">Please Select</option>
-              <option value="asc">Addiction services clinics</option>
-              <option value="mhc">Mental health clinics</option>
-              <option value="pcc">Primary care clinics</option>
-              <option value="shc">Sexual health clinics</option>
-              <option value="sc">Specialized clinics</option>
+              <option value="Addiction services clinics">Addiction services clinics</option>
+              <option value="Mental health clinics">Mental health clinics</option>
+              <option value="Primary care clinics">Primary care clinics</option>
+              <option value="Sexual health clinics">Sexual health clinics</option>
+              <option value="Specialized clinics">Specialized clinics</option>
               
             </select>
           </div>
@@ -159,15 +162,38 @@
           <!-- Date -->
           <div class="display-flex mb-4">
             <label for="date-of-booking" class="label-options">Date*</label>
-            <input type="date" name="date-of-booking" id="date-of-booking" class="input-options" required>
+            <input type="datetime-local" name="date-of-booking" id="date-of-booking" class="input-options" required>
           </div>
 
           <div class="mt-10 mb-24">
-            <a href="./all_details.html" class="bg-red-500 text-[#E8ECEC] w-full p-4 rounded-md">Show Details</a>
+            <button class="bg-red-500 text-[#E8ECEC] w-full p-4 rounded-md">Show Details</button>
           </div>
         </form>
       </div>
     </main>
+
+    <section class="mb-10">
+      <div class="mt-5 px-5">
+        <table class="table table-auto border w-full text-center" id="table-result">
+          <thead class="bg-[#E5EAEA]">
+            <tr>
+              <th class="px-2 py-1.5 border">First Name</th>
+              <th class="px-2 py-1.5 border">Last Name</th>
+              <th class="px-2 py-1.5 border">Contact Number</th>
+              <th class="px-2 py-1.5 border">State</th>
+              <th class="px-2 py-1.5 border">Province</th>
+              <th class="px-2 py-1.5 border">Service</th>
+              <th class="px-2 py-1.5 border">Date</th>
+              <th class="px-2 py-1.5 border">Edit / Delete</th>
+            </tr>
+          </thead>
+
+          <tbody class="bg-[#819896]" id="tbl-body">
+           
+          </tbody>
+        </table>
+      </div>
+    </section>
 
   </body>
 </html>
