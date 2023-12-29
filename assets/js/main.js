@@ -58,7 +58,7 @@ validator.addField(
   }
 );
 
-// COntact Number
+// Contact Number
 validator.addField(
   "#contact-number",
   [
@@ -140,6 +140,7 @@ validator.addField(
   }
 );
 
+
 validator.onSuccess(() => {
   // !Need to get all form data
   const formData = new FormData(formEl);
@@ -178,6 +179,7 @@ validator.onSuccess(() => {
   formEl.reset();
   getAllDatasInTableForm()
 });
+
 
 function getAllDatasInTableForm() {
   // Get all the datas from localStorage

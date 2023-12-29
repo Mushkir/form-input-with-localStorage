@@ -9,6 +9,7 @@ export default defineConfig({
             input: {
                 index: resolve(__dirname, 'index.html'),
                 details: resolve(__dirname, 'all_details.html'),
+                main: resolve(__dirname, './assets/js/main.js'),
                 utils: resolve(__dirname, './assets/js/utils.js')
             }
         },
