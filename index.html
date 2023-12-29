@@ -85,7 +85,6 @@
               name="contact-number"
               id="contact-number"
               class="input-options"
-              value="8521479695"
               required
             />
           </div>
@@ -149,11 +148,11 @@
             <select name="service-list" class="input-options" id="service-list" required>
 
               <option value="">Please Select</option>
-              <option value="asc">Addiction services clinics</option>
-              <option value="mhc">Mental health clinics</option>
-              <option value="pcc">Primary care clinics</option>
-              <option value="shc">Sexual health clinics</option>
-              <option value="sc">Specialized clinics</option>
+              <option value="Addiction services clinics">Addiction services clinics</option>
+              <option value="Mental health clinics">Mental health clinics</option>
+              <option value="Primary care clinics">Primary care clinics</option>
+              <option value="Sexual health clinics">Sexual health clinics</option>
+              <option value="Specialized clinics">Specialized clinics</option>
               
             </select>
           </div>
@@ -161,7 +160,7 @@
           <!-- Date -->
           <div class="display-flex mb-4">
             <label for="date-of-booking" class="label-options">Date*</label>
-            <input type="date" name="date-of-booking" id="date-of-booking" class="input-options" required>
+            <input type="datetime-local" name="date-of-booking" id="date-of-booking" class="input-options" required>
           </div>
 
           <div class="mt-10 mb-24">
@@ -173,7 +172,7 @@
 
     <section class="mb-10">
       <div class="mt-5 px-5">
-        <table class="table table-auto border w-full text-center hidden" id="table-result">
+        <table class="table table-auto border w-full text-center" id="table-result">
           <thead class="bg-[#E5EAEA]">
             <tr>
               <th class="px-2 py-1.5 border">First Name</th>
@@ -195,5 +194,6 @@
     </section>
 
     <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/utils.js"></script>
   </body>
 </html>
